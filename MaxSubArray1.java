@@ -26,7 +26,9 @@ public class MaxSubArray1 {
 					                  //即sum赋值为0,同时把这个小正数纳入下次sum的累计。之所以说它是个小正数，
 					                  //是因为它正好抵消前面负效应(即sum=0)或者抵消不了(sum依然为0)
 				}
-			}	
+			}
+			
+			//如果sum大于0,这一次的sum累计还没有完成，继续数组遍历
 		}
 		return SubArraySum;           
     }
